@@ -1,0 +1,105 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+    font-size: 17px;
+}
+
+/*Filme principal*/
+.filmeprincipal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/TheWitcherFundo/TheWitcherFundo.jpg');
+
+    height: 600px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.container{
+    margin-left: 25px;
+}
+.filmeprincipal .container{
+    
+    width: 60%;
+    margin-right: 25px;
+}
+
+.filmeprincipal .descricao{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.filmeprincipal .titulo{
+    margin-top: 15%;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 30px;
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: .5s;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.boxfilme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carroselfilmes{
+    margin-top: 10px;
+}
